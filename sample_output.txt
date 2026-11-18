@@ -1,0 +1,36 @@
+
+Quote awaiting approval:
+  Reference: REQ-1042
+  Route: San Francisco to Los Angeles
+  Date: 2026-12-10
+  Aircraft: Citation XLS
+  Price: $12,500
+  Status: Draft
+
+Approve this quote? Type 'yes' to approve: 
+Execution history:
+[2026-11-18T04:48:48] START: Workflow REQ-1042
+[2026-11-18T04:48:48] RUNNING: Check availability (attempt 1)
+[2026-11-18T04:48:48] FAILED: Temporary API timeout
+[2026-11-18T04:48:48] RETRY: Attempt 2
+[2026-11-18T04:48:48] RUNNING: Check availability (attempt 2)
+[2026-11-18T04:48:48] SUCCESS: Aircraft availability received
+[2026-11-18T04:48:48] RUNNING: Prepare quote
+[2026-11-18T04:48:48] SUCCESS: Draft prepared
+[2026-11-18T04:48:48] PAUSED: Waiting for human approval
+[2026-11-18T04:48:48] APPROVED: Human approved draft
+[2026-11-18T04:48:48] RUNNING: Send quote (mock)
+[2026-11-18T04:48:48] SUCCESS: Mock send completed for quote REQ-1042.
+[2026-11-18T04:48:48] COMPLETE: Workflow finished
+
+Final workflow status: COMPLETE
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

@@ -1,0 +1,18 @@
+# Ignore Python bytecode caches.
+__pycache__/
+
+# Ignore compiled Python files.
+*.py[cod]
+
+# Ignore virtual environments.
+.venv/
+venv/
+
+# Ignore common editor and operating-system files.
+.DS_Store
+.vscode/
+.idea/
+
+# Ignore test and coverage artifacts.
+.coverage
+.pytest_cache/
